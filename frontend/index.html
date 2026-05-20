@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>¿Cuánto gasté?</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>💸 ¿Cuánto gasté?</h1>
+
+      <form id="formGasto">
+        <input
+          type="text"
+          id="descripcion"
+          placeholder="Descripción"
+          required
+        />
+        <input type="number" id="monto" placeholder="Monto" required />
+        <input type="text" id="categoria" placeholder="Categoría" required />
+        <input type="date" id="fecha" required />
+        <button type="submit" id="btnGuardar">Agregar gasto</button>
+      </form>
+
+      <div id="mensaje"></div>
+
+      <section class="card">
+        <h2>📊 Resumen</h2>
+        <div id="resumen"></div>
+        <canvas id="grafica" height="220"></canvas>
+      </section>
+
+      <section class="card">
+        <h2>📋 Lista de gastos</h2>
+        <ul id="listaGastos"></ul>
+      </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

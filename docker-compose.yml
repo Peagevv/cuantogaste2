@@ -1,0 +1,12 @@
+services:
+  mongodb:
+    image: mongo:7
+    container_name: cuanto-gaste-mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - cuanto_gaste_data:/data/db
+
+volumes:
+  cuanto_gaste_data:

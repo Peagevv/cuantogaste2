@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #101010, #1b1b2f);
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 850px;
+  margin: auto;
+  padding: 25px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  background: #1f1f2e;
+  padding: 20px;
+  border-radius: 16px;
+  display: grid;
+  gap: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+input,
+button {
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+input {
+  background: #eeeeee;
+}
+
+button {
+  background: #00c853;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #00e676;
+}
+
+#mensaje {
+  margin: 15px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card {
+  background: #1f1f2e;
+  padding: 20px;
+  border-radius: 16px;
+  margin-top: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+#resumen {
+  text-align: center;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+canvas {
+  max-width: 420px;
+  margin: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #2b2b3d;
+  margin: 12px 0;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.acciones {
+  margin-top: 12px;
+}
+
+.acciones button {
+  margin-right: 8px;
+  background: #2962ff;
+}
+
+.acciones button:hover {
+  background: #448aff;
+}
+
+.eliminar {
+  background: #d50000 !important;
+}
+
+.eliminar:hover {
+  background: #ff1744 !important;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}
