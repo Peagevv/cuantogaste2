@@ -1,4 +1,4 @@
-const API = "http://98.87.21.92:3000/api/gastos";
+const API = "/api/gastos";
 
 const form = document.getElementById("formGasto");
 const lista = document.getElementById("listaGastos");
